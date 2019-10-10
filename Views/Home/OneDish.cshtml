@@ -1,0 +1,15 @@
+@model CRUDelicious.Models.Dish
+<div>
+    <a href="/">Home</a>
+    <h1>@Model.Name</h1>
+    <h2>@Model.Chef</h2>
+    <p>@Model.Description</p>
+    <p>Calories: @Model.Calories</p>
+    <p>Tastiness: @Model.Tastiness</p>
+    <a href="/delete/@Model.DishId">
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </a>
+    <a href="/edit/@Model.DishId">
+        <button class="btn btn-primary" type="submit">Edit</button>
+    </a>
+</div>
